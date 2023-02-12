@@ -2,7 +2,7 @@
 
  const btn = document.querySelector("#btn");
   const guess = document.querySelector("#guess");
-  const result = document.querySelector("#respond");
+  const result = document.querySelector("#num");
 
   let randomNum = Math.floor(Math.random() * 101); // generates random number between 0 and 100
 
