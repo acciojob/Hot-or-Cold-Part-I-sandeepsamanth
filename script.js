@@ -8,11 +8,11 @@
  
 
   btn.addEventListener("click", function() {
-    let userGuess = parseInt(guess.value);
+    let userGuess = Number(guess.value);
 	  if(isNaN(userGuess)){
 		  userGuess=-20;
 	  }
-  
+      // result.textContent =randomNum;
     if (Math.abs(userGuess - randomNum) <= 10) {
       result.textContent = "Hot";
     } else {
