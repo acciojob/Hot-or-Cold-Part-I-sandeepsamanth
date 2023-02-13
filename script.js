@@ -12,10 +12,10 @@
 	  if(isNaN(userGuess)){
 		  userGuess=-20;
 	  }
-      // result.textContent =randomNum;
-    if (Math.abs(userGuess - randomNum) <= 10) {
-      result.textContent = "Hot";
-    } else {
-      result.textContent = "Cold";
-    }
+    result.textContent =randomNum ;
+    // if (Math.abs(userGuess - randomNum) <= 10) {
+    //   result.textContent = "Hot";
+    // } else {
+    //   result.textContent = "Cold";
+    // }
   });
