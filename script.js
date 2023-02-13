@@ -8,7 +8,7 @@
  
 
   btn.addEventListener("click", function() {
-    let userGuess = Number(guess.value);
+    let userGuess = parseInt(guess.value);
 	  if(isNaN(userGuess)){
 		  userGuess=-20;
 	  }
