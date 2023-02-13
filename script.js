@@ -16,7 +16,7 @@ function guessNum() {
 
 }
 function print() {
-	if (Math.abs( randomNum - input) <= 5){
+	if (Math.abs( randomNum - input) <= 10){
 		document.getElementById("respond").innerText= input;
 	}else{
 		document.getElementById("respond").innerHTML= input;
