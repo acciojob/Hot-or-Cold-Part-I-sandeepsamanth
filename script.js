@@ -1,21 +1,25 @@
-//your code here
+var randomNum;
+var input;
 
- const btn = document.querySelector("#btn");
-  const guess = document.querySelector("#guess");
-  const result = document.querySelector("#respond");
+function randomNumGenerator() {
+	randomNum = Math.floor(Math.random() * 41) - 20;
+	document.getElementById("num").innerText= randomNum;
+	guessNum();
+	print()
+	
+}
 
-  let randomNum =  Math.floor(Math.random() * 41) - 20;
- 
+function guessNum() {
+	 
+	input=Number(document.getElementById("guess").value);
+	 
 
-  btn.addEventListener("click", function() {
-    let userGuess = Number(guess.value);
-	  if(isNaN(userGuess)){
-		  userGuess=-20;
-	  }
-    // result.textContent =randomNum ;
-    if (Math.abs(userGuess - randomNum) <= 10) {
-      result.textContent = "Hot";
-    } else {
-      result.textContent = "Cold";
-    }
-  });
+}
+function print() {
+	if (Math.abs( randomNum - input) <= 5){
+		document.getElementById("respond").innerText= input;
+	}else{
+		document.getElementById("respond").innerHTML= input;
+		
+	}
+}
