@@ -5,11 +5,14 @@
   const result = document.querySelector("#respond");
 
   let randomNum =  Math.floor(Math.random() * 41) - 20;
-// generates random number between 0 and 100
+ 
 
   btn.addEventListener("click", function() {
-    let userGuess = parseInt(guess.value);
-
+    let userGuess = Number(guess.value);
+	  if(isNaN(userGuess)){
+		  userGuess=-20;
+	  }
+  
     if (Math.abs(userGuess - randomNum) <= 10) {
       result.textContent = "Hot";
     } else {
