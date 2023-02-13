@@ -1,7 +1,7 @@
 //your code here
 
  const btn = document.querySelector("#btn");
-  const guess = document.querySelector("#guess");
+  const guess = document.querySelector("#num");
   const result = document.querySelector("#respond");
 
   let randomNum =  Math.floor(Math.random() * 41) - 20;
